@@ -1,75 +1,174 @@
-# Cursor Projects Collection
+# Cursor 项目集合
 
-整理后的 Cursor 工作区项目集合，按功能分类组织。
+这是一个包含多种类型项目的综合工作空间，涵盖了机器学习、数据分析、Web开发和学术研究等领域。
 
 ## 📁 项目结构
 
-### 🏥 Medical Data Analysis
-R 数据分析项目，包含医疗数据分析和处理脚本。
-- **位置**: `medical-data-analysis/`
-- **技术**: R, 数据分析
-- **主要文件**: R 脚本, CSV 数据文件
+```
+Cursor/
+├── 🤖 机器学习项目/
+│   ├── H2O机器学习分析.R
+│   └── README.md
+├── 📊 数据分析项目/
+│   ├── 医疗案例数据.csv
+│   ├── 数据列检查工具.R
+│   ├── 详细统计分析.R
+│   ├── AI表格生成器.R
+│   └── README.md
+├── 🌐 Web开发项目/
+│   ├── 泉州旅游规划页面.html
+│   ├── 身份验证中间件.ts
+│   ├── 项目依赖配置.json
+│   ├── 依赖锁定文件.json
+│   └── README.md
+├── 📚 学术研究项目/
+│   ├── 急诊医师能力研究论文.md
+│   ├── 旅游网站设计指南.md
+│   └── README.md
+├── ⚙️ 配置文件/
+│   ├── MCP服务器配置.json
+│   └── README.md
+├── 🏥 mimic-fhir/
+│   └── (医疗数据FHIR转换项目)
+├── 📋 QUICK_ACCESS.md
+├── 📖 README.md
+└── .gitignore
+```
 
-### 🌐 Web Projects  
-Web 开发项目集合，包含前端和后端开发文件。
-- **位置**: `web-projects/`
-- **技术**: HTML, CSS, JavaScript, Node.js, TypeScript
-- **主要文件**: 旅游规划网站, Node.js 后端
+## 🎯 项目分类
 
-### 📚 Documentation and Configuration
-文档和配置文件集合。
-- **位置**: `docs-and-config/`
-- **内容**: 设计文档, 配置文件, 提示词
+### 🤖 机器学习项目
+专注于医疗数据分析和预测模型的开发，使用H2O AutoML和SHAP等技术。
 
-### 🗂️ MIMIC-FHIR
-医疗数据 FHIR 转换项目。
-- **位置**: `mimic-fhir/`
-- **技术**: FHIR, 医疗数据转换
+**主要文件:**
+- `H2O机器学习分析.R` - H2O AutoML自动机器学习模型训练和SHAP模型解释
+
+### 📊 数据分析项目
+包含各种数据分析和统计处理工具，用于医疗数据的探索性分析和报告生成。
+
+**主要文件:**
+- `医疗案例数据.csv` - 126个医疗案例数据集
+- `数据列检查工具.R` - 数据质量检查和列信息分析
+- `详细统计分析.R` - 深入的统计分析脚本
+- `AI表格生成器.R` - 基于Gemini 2.5的表格生成
+
+### 🌐 Web开发项目
+包含Web应用开发相关的文件，涵盖前端页面、中间件和项目配置。
+
+**主要文件:**
+- `泉州旅游规划页面.html` - A4可打印的旅游规划网页
+- `身份验证中间件.ts` - Next.js JWT身份验证中间件
+- `项目依赖配置.json` - Node.js项目依赖配置
+
+### 📚 学术研究项目
+包含学术研究和论文相关的文档，涵盖医疗教育和旅游技术等领域。
+
+**主要文件:**
+- `急诊医师能力研究论文.md` - 医疗教育研究论文
+- `旅游网站设计指南.md` - 旅游网站设计和开发指南
+
+### ⚙️ 配置文件
+包含各种配置文件和设置文档，用于系统集成和自动化。
+
+**主要文件:**
+- `MCP服务器配置.json` - AI模型与外部服务集成配置
 
 ## 🚀 快速开始
 
-### 克隆项目
+### 机器学习项目
 ```bash
-git clone https://github.com/lee388366/cursor-projects.git
-cd cursor-projects
+# 运行H2O机器学习分析
+Rscript 机器学习项目/H2O机器学习分析.R
 ```
 
-### 运行 R 数据分析
+### 数据分析项目
 ```bash
-cd medical-data-analysis
-Rscript driver.R
+# 检查数据质量
+Rscript 数据分析项目/数据列检查工具.R
+
+# 运行详细统计分析
+Rscript 数据分析项目/详细统计分析.R
 ```
 
-### 运行 Web 项目
+### Web开发项目
 ```bash
-cd web-projects
+# 安装依赖
+cd Web开发项目
 npm install
-# 根据具体项目配置运行
+
+# 启动开发服务器
+npm run dev
 ```
 
-## 📋 项目说明
+## 📋 技术栈
 
-每个子项目都有独立的 README 文件，包含详细的使用说明和技术文档。
+### 机器学习
+- **R**: 主要编程语言
+- **H2O**: 自动机器学习框架
+- **SHAP**: 模型解释工具
+- **tidymodels**: 机器学习工作流
 
-## 🔧 技术栈
+### 数据分析
+- **R**: 统计分析
+- **ggplot2**: 数据可视化
+- **dplyr**: 数据处理
+- **Gemini 2.5**: AI辅助分析
 
-- **数据分析**: R
-- **前端开发**: HTML, CSS, JavaScript
-- **后端开发**: Node.js, TypeScript
-- **医疗数据**: FHIR
-- **文档**: Markdown
+### Web开发
+- **HTML5/CSS3**: 前端页面
+- **TypeScript**: 类型安全开发
+- **Next.js**: React框架
+- **JWT**: 身份验证
 
-## 📝 更新日志
+### 学术研究
+- **Markdown**: 文档编写
+- **Git**: 版本控制
+- **学术写作**: 论文撰写
 
-- **2024-07-19**: 项目重新整理和分类
-- 创建了清晰的项目结构
-- 添加了详细的 README 文档
-- 配置了 .gitignore 文件
+## 🔧 环境要求
 
-## 🤝 贡献
+### R环境
+- R 4.0+
+- 必要的R包: h2o, shap, ggplot2, dplyr, tidymodels
 
-欢迎提交 Issue 和 Pull Request！
+### Node.js环境
+- Node.js 16+
+- npm 8+
 
-## �� 许可证
+### 其他工具
+- Git (版本控制)
+- 支持Markdown的编辑器
 
-MIT License 
+## 📖 详细文档
+
+每个项目目录都包含详细的README文件，说明具体的使用方法和注意事项。
+
+- [机器学习项目说明](机器学习项目/README.md)
+- [数据分析项目说明](数据分析项目/README.md)
+- [Web开发项目说明](Web开发项目/README.md)
+- [学术研究项目说明](学术研究项目/README.md)
+- [配置文件说明](配置文件/README.md)
+- [快速访问指南](QUICK_ACCESS.md)
+
+## 🤝 贡献指南
+
+1. Fork 项目
+2. 创建功能分支
+3. 提交更改
+4. 推送到分支
+5. 创建 Pull Request
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+## 📞 联系方式
+
+如有问题或建议，请通过以下方式联系：
+- 创建 Issue
+- 发送邮件
+- 提交 Pull Request
+
+---
+
+**注意**: 本项目包含医疗数据相关文件，请确保遵守相关隐私和数据保护法规。 
