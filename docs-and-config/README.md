@@ -11,8 +11,7 @@
 ### 配置文件
 - `mcp_config.json` - MCP 服务器配置文件
 
-### 临时文件
-- `hhhhhh.R` - 临时 R 脚本
+### 系统文件
 - `.DS_Store` - macOS 系统文件
 
 ## 项目结构
@@ -23,7 +22,6 @@ docs-and-config/
 ├── 旅游网站提示词.md    # 网站设计文档
 ├── revised_article.md   # 修订文章
 ├── mcp_config.json     # MCP 配置
-├── hhhhhh.R           # 临时脚本
 └── .DS_Store          # 系统文件
 ```
 
@@ -46,4 +44,4 @@ docs-and-config/
 
 - 文档文件可用于项目参考
 - 配置文件可根据需要调整
-- 临时文件可考虑清理 
+- 系统文件可考虑清理 
